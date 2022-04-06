@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "launch": {
+        "configurations": [
+            {
+                "type": "pwa-node",
+                "request": "launch",
+                "name": "Launch Program",
+                "skipFiles": [
+                    "<node_internals>/**"
+                ],
+                "program": "${workspaceFolder}\\build\\src\\index.js",
+                "preLaunchTask": "npm: compile",
+                "outFiles": [
+                    "${workspaceFolder}/build/**/*.js"
+                ]
+            }
+        ]
+    }
+}
