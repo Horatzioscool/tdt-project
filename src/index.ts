@@ -1,9 +1,13 @@
-import {Builder} from 'selenium-webdriver';
+import * as puppeteer from 'puppeteer';
 
-(async function helloSelenium() {
-  let driver = await new Builder().forBrowser('chrome').build();
+async function helloPuppeteer() {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://lighthouse-demo.evozon.com/login');
 
-  await driver.get('https://lighthouse-demo.evozon.com/login');
+  await page.screenshot({path: 'example.png'});
 
-  await driver.quit();
-})();
+  await browser.close();
+}
+
+helloPuppeteer();

@@ -3,11 +3,19 @@
 	"tasks": [
 		{
 			"type": "npm",
+			"script": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "npm.cmd run compile"
+		},
+		{
+			"type": "npm",
 			"script": "compile",
 			"group": "build",
 			"problemMatcher": [],
 			"label": "npm: compile",
-			"detail": "tsc"
+			"detail": "npm.cmd run compile"
 		}
 	]
 }
