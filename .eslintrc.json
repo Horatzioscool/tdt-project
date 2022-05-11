@@ -1,9 +1,0 @@
-{
-  "extends": ["plugin:@typescript-eslint/recommended", "./node_modules/gts/" ],
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "rules": { "@typescript-eslint/await-thenable": "error" },
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  }
-}
