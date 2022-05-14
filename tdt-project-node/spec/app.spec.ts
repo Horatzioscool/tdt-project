@@ -1,10 +1,20 @@
 import "jasmine";
-import assert = require("assert");
-import { launch } from "puppeteer";
+import * as Puppeteer from "puppeteer";
+import * as config from "../config.json";
+import { authheader } from "./helpers";
+
+const { url, username, password } = config;
 
 describe("Lighthouse App", () => {
   it("lets us book desks", async () => {
-    assert(true);
-    const pup = await launch({});
+    const browser = await Puppeteer.launch({ headless: false });
+    const page = await browser.newPage();
+    await page.setExtraHTTPHeaders({
+      authorization: authheader(username, password),
+    });
+    await page.goto(url);
+
+    const title = await page.title();
+    expect(title).toContain("Lighthouse");
   });
 });
