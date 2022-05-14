@@ -12,7 +12,7 @@ Pass: LH@Evozon!2022
          - IO1 - Verify the functionalities work as expected individually (check for happy case)
          - IO2 - Verify the functionalities work as expected orchestrated (check for happy case)
          - IO3 - Gheorghe found a bug in the Buildings Management
-   - User Interface Testing - Flaviu
+   - User Interface Testing - Raul
       - Test elements of the UI
          - IO1 - Test that elements are clickable everywhere
          - IO2 - Test that elements can be clicked multiple times
