@@ -38,3 +38,6 @@ Pass: LH@Evozon!2022
       - Long Running, Several Tests
          - AC1 - e2e Test the entire application as User
          - AC2 - e2e Test the entire application as Admin
+
+
+https://serenity-js.org/
