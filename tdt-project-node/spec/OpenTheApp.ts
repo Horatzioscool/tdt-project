@@ -1,10 +1,8 @@
-import {Ensure, startsWith} from '@serenity-js/assertions';
-import {Task} from '@serenity-js/core';
-import {Navigate, Website} from '@serenity-js/protractor';
+import { Ensure, startsWith } from "@serenity-js/assertions";
+import { Task } from "@serenity-js/core";
+import { Navigate, Website } from "@serenity-js/protractor";
+import * as config from "../config.json";
 
-export const OpenTheApp = () =>
-  Task.where(
-    '#actor opens the app',
-    Navigate.to('http://localhost:8080'),
-    Ensure.that(Website.title(), startsWith('Vue.js'))
-  );
+const { url, username, password } = config;
+
+export const OpenTheApp = () => Task.where("#actor opens the app");

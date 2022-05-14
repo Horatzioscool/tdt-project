@@ -6,6 +6,7 @@
   "keywords": [],
   "scripts": {
     "test": "protractor ./protractor.conf.js",
+    "test:api": "jasmine --config=./jasmine.json --reporter=@serenity-js/jasmine",
     "test:report": "serenity-bdd run",
     "lint": "tslint --project tsconfig.json --format stylish"
   },
