@@ -1,0 +1,9 @@
+config:
+  target: "https://google.com"
+  phases:
+    - duration: 5
+      arrivalCount: 2
+scenarios:
+  - flow:
+      - get:
+          url: '/'
