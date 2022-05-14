@@ -4,6 +4,9 @@ https://lighthouse-demo.evozon.com/login
 User: lhdemo
 Pass: LH@Evozon!2022
 
+# Doc link
+https://drive.google.com/drive/folders/1H-iDY3cmdnJWeRM8Q62wD6LsPel77usG?usp=sharing
+
 # Testing Techniques
 
 1. ## Coverage-based Techniques
@@ -38,6 +41,3 @@ Pass: LH@Evozon!2022
       - Long Running, Several Tests
          - AC1 - e2e Test the entire application as User
          - AC2 - e2e Test the entire application as Admin
-
-
-https://serenity-js.org/
