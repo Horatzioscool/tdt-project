@@ -1,0 +1,12 @@
+config:
+  target: {{url}}
+  phases:
+    - arrivalRate: {{arrivalRate}}
+      duration: {{duration}}
+  defaults:
+    headers:
+        authorization: {{authheader}}
+scenarios:
+  - flow:
+      - get:
+          url: '/'

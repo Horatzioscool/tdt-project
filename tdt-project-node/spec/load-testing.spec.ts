@@ -1,4 +1,8 @@
 import { exec } from "child_process";
+import * as fs from "fs/promises";
+import Mustache = require("mustache");
+import * as config from "../config.json";
+import * as loadTestingConfig from "./load-testing/load-testing.config.json";
 
 interface ArtilleryReport {
   aggregate: {
@@ -11,17 +15,27 @@ interface ArtilleryReport {
   };
 }
 
-describe("Lighthouse App", () => {
-  let originalTimeout;
+const scripteFileTemplate = `spec/load-testing/load-testing.yaml.mustache`;
+const scriptFile = `spec/load-testing/load-testing.yaml`;
+const reportFile = `spec/load-testing/report.json`;
 
+describe("Lighthouse LOAD TEST", () => {
+  let originalTimeout;
   beforeAll(() => {
     originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
     jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000000000;
   });
 
-  it("lets us book desks", async () => {
-    const scriptFile = `spec/load-testing/test.yaml`;
-    const reportFile = `spec/load-testing/report.json`;
+  it("lets us access the login page", async () => {
+    const buffer = await fs.readFile(scripteFileTemplate);
+    const template = await buffer.toString();
+
+    const artilleryConfig = Mustache.render(template, {
+      ...loadTestingConfig,
+      authheader: "",
+      url: config.url,
+    });
+
     const artillery = exec(
       `npx artillery run --output ${reportFile} ${scriptFile}`,
       (e, output) => {
