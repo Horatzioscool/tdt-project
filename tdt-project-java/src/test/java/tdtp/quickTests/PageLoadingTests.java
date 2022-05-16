@@ -5,15 +5,13 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import tdtp.steps.serenity.EndUserSteps;
 
 @RunWith(SerenityRunner.class)
-public class QuickTests {
+public class PageLoadingTests {
 
     private String username = "gomicox775@roxoas.com", password = "Pass.1234";
 
@@ -22,7 +20,7 @@ public class QuickTests {
     public WebDriver webDriver;
 
     @Before
-    public void initializeDriver(){
+    public void initializeDriver() {
         webDriver.manage().window().maximize();
     }
 
@@ -122,8 +120,44 @@ public class QuickTests {
         user.should_be_on_contact_page();
     }
 
+    @Test
+    public void desksReportPage_loads_after_selection() {
+        //Given that the user is logged in
+        user.open_auth_page();
+        user.authenticate();
+        user.login(username, password);
+        //When the user selects the desks report page
+        user.go_to_desksReportPage();
+        //Then the desks report page should be prompted
+        user.should_be_on_desks_report_page();
+    }
+
+    @Test
+    public void userPresenceReportPage_loads_after_selection() {
+        //Given that the user is logged in
+        user.open_auth_page();
+        user.authenticate();
+        user.login(username, password);
+        //When the user selects the user presence report page
+        user.go_to_userPresenceReportPage();
+        //Then the user presence report page should be prompted
+        user.should_be_on_userPresence_report_page();
+    }
+
+    @Test
+    public void utilizationReportPage_loads_after_selection() {
+        //Given that the user is logged in
+        user.open_auth_page();
+        user.authenticate();
+        user.login(username, password);
+        //When the user selects the utilization report page
+        user.go_to_utilizationReportsPage();
+        //Then the utilization report page should be prompted
+        user.should_be_on_utilization_report_page();
+    }
+
     @After
-    public void clear(){
+    public void clear() {
         user.sign_out();
     }
 

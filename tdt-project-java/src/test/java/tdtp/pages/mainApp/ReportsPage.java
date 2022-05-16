@@ -28,4 +28,19 @@ public class ReportsPage extends BasePage{
         waitForPageToLoad();
         return getPageTitle().toLowerCase(Locale.ROOT).contains("reports");
     }
+
+    public void select_desksReports(){
+        waitForElement(desksReportBtn);
+        desksReportBtn.click();
+    }
+
+    public  void select_userPresenceReports(){
+        waitForElement(userPresenceReportBtn);
+        userPresenceReportBtn.click();
+    }
+
+    public void select_utilizationReports(){
+        waitForElement(utilizationReportBtn);
+        utilizationReportBtn.click();
+    }
 }

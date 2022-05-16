@@ -4,6 +4,9 @@ import net.thucydides.core.annotations.Step;
 import tdtp.pages.AuthPage;
 import tdtp.pages.LoginPage;
 import tdtp.pages.mainApp.*;
+import tdtp.pages.mainApp.reports.DesksReportPage;
+import tdtp.pages.mainApp.reports.UserPresenceReportPage;
+import tdtp.pages.mainApp.reports.UtilizationReportPage;
 
 import static org.junit.Assert.*;
 
@@ -17,7 +20,9 @@ public class EndUserSteps {
     private ReportsPage reportsPage;
     private ContactPage contactPage;
     private BasePage basePage;
-
+    private DesksReportPage desksReportPage;
+    private UserPresenceReportPage userPresenceReportPage;
+    private UtilizationReportPage utilizationReportPage;
 
 
     @Step
@@ -79,6 +84,21 @@ public class EndUserSteps {
     }
 
     @Step
+    public void should_be_on_desks_report_page(){
+        assertTrue("User should be on desks report page!", desksReportPage.is_desksReportPage());
+    }
+
+    @Step
+    public void should_be_on_userPresence_report_page(){
+        assertTrue("User should be on users presence report page!", userPresenceReportPage.is_userPresenceReportPage());
+    }
+
+    @Step
+    public void should_be_on_utilization_report_page(){
+        assertTrue("User should be on utilization report page!", utilizationReportPage.is_utilizationReportsPage());
+    }
+
+    @Step
     public void select_manageBookingsPage() {
         basePage.clickOnTab("bookings");
     }
@@ -106,5 +126,21 @@ public class EndUserSteps {
     @Step
     public void select_contactPage() {
         basePage.clickOnTab("contact");
+    }
+
+    @Step
+    public void go_to_desksReportPage() {
+        basePage.clickOnTab("reports");
+        reportsPage.select_desksReports();
+    }
+    @Step
+    public void go_to_userPresenceReportPage(){
+        basePage.clickOnTab("reports");
+        reportsPage.select_userPresenceReports();
+    }
+    @Step
+    public void go_to_utilizationReportsPage() {
+        basePage.clickOnTab("reports");
+        reportsPage.select_utilizationReports();
     }
 }
