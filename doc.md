@@ -23,7 +23,7 @@ https://drive.google.com/drive/folders/1H-iDY3cmdnJWeRM8Q62wD6LsPel77usG?usp=sha
 2. ## Risk-based Techniques
    - Quick Testing - Raul
       - Short, quick tests
-         - IO1 - Test that pages load
+         - IO1 - Test that pages load ✔
          - IO2 - Test that elements on pages work
          - IO3 - Test if app can be accessed without auth
    - Load Testing - Horatiu
