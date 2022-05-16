@@ -157,7 +157,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-05-2022 15:24</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-05-2022 16:15</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Contact page loads after selection
+                                <span class="failing-color">Contact page loads after selection
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -217,7 +217,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Timeout exception: Expected condition failed: waiting for element to be clickable: Proxy element for: BasePage.contactTab (tried for 35 second(s) with 500 milliseconds interval)</span>
+                    <span class="error-message error-message-title">Assertion error: User should be on contact page!</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -233,20 +233,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.TimeoutException </h4>
+                    <h4>java.lang.AssertionError </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>tdtp.pages.mainApp.BasePage.waitForElement(BasePage.java:67)<br />tdtp.pages.mainApp.BasePage.clickOnTab(BasePage.java:59)<br />tdtp.steps.serenity.EndUserSteps.select_contactPage(EndUserSteps.java:102)<br />tdtp.quickTests.QuickTests.contactPage_loads_after_selection(QuickTests.java:110)<br /></pre>
+                        <pre>tdtp.steps.serenity.EndUserSteps.should_be_on_contact_page(EndUserSteps.java:73)<br />tdtp.quickTests.QuickTests.contactPage_loads_after_selection(QuickTests.java:122)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.NoSuchElementException
-                    </h4>
-                    <div>
-                            <pre>Timed out after 2 seconds. Element not found<br>For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'DESKTOP-T2P60S2', ip: '192.168.1.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_332'<br>Driver info: driver.version: unknown</pre>
-                        <pre>tdtp.pages.mainApp.BasePage.waitForElement(BasePage.java :67)<br />tdtp.pages.mainApp.BasePage.clickOnTab(BasePage.java :59)<br />tdtp.steps.serenity.EndUserSteps.select_contactPage(EndUserSteps.java :102)<br />tdtp.quickTests.QuickTests.contactPage_loads_after_selection(QuickTests.java :110)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -254,15 +247,18 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource5157057309274036518.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource8930224327428598960.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="5607f2120d158d68f91512bc9e5941e66dff2255a793c4360b8c1cf13c465ab4.png" title=" Open auth page" width="929"/>
-                <img src="f9f3dfa0e67d6045da422ae698c9c73c2e0fd36124c937ccb5241b9fad8bdb68.png" title=" Authenticate" width="1920"/>
-                <img src="f033262ab3a66a6f2e8a293da20f100614ee11945518c18119eda10cff3df0d3.png" title=" Login: gomicox775@roxoas.com, Pass.1234" width="1920"/>
-                <img src="a104c84f9f4114324aaad9fe74c28ba80d206b24017dbd8a2f3d2082370c7fa6.png" title=" Select contact page: <span class='error-color'>ERROR</span>" width="1365"/>
+                <img src="74e472173ebcd3031c5687cd3809822ebbe405c571caf98e0c1dc26176ce91b7.png" title=" Open auth page" width="1920"/>
+                <img src="74e472173ebcd3031c5687cd3809822ebbe405c571caf98e0c1dc26176ce91b7.png" title=" Open auth page (completed)" width="1920"/>
+                <img src="13b4c746e80501741b01e749ff6525d929abb6c8b276ed5c6713fd0e05cb98f8.png" title=" Authenticate" width="1920"/>
+                <img src="6ac8e33588a1145a80977dbcfc6db208ae00e380be0964899e620bda246b5ddd.png" title=" Login: gomicox775@roxoas.com, Pass.1234" width="1920"/>
+                <img src="6ee47306bc9e4744904d5bd611a54dc22f135d9af12a1dd413f1252594e60bd5.png" title=" Select contact page" width="1920"/>
+                <img src="6ee47306bc9e4744904d5bd611a54dc22f135d9af12a1dd413f1252594e60bd5.png" title=" Should be on contact page" width="1920"/>
+                <img src="a098c2e3993f9434b57595c313549a9faf79cd09b19df14a2d18ae14421a347e.png" title=" Sign out: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

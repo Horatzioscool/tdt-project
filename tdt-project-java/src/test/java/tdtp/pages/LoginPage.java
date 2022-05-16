@@ -31,7 +31,7 @@ public class LoginPage extends AuthPage {
 
     public boolean is_loginPage(){
         waitForLoginPageToLoad();
-        return getDriver().findElement(By.xpath("//*[@id='__next']//img[@src = 'blob:https://lighthouse-demo.evozon.com/38f0db63-18d5-45ab-a5fa-6ff7bee1e9e4']")).isDisplayed();
+        return usernameField.isDisplayed() && passwordField.isDisplayed() && signInBtn.isDisplayed();
     }
 
     public void login(String username, String password){
@@ -42,5 +42,21 @@ public class LoginPage extends AuthPage {
         usernameField.sendKeys(username);
         passwordField.sendKeys(password);
         signInBtn.click();
+
+        if(getDriver().findElements(By.xpath("//*[@id=\"__next\"]//h1[contains(text(),'Too many failed attempts.')]")).size() > 0)
+        {
+            try {
+                Thread.sleep(33000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            waitForLoginPageToLoad();
+            usernameField.clear();
+            passwordField.clear();
+
+            usernameField.sendKeys(username);
+            passwordField.sendKeys(password);
+            signInBtn.click();
+        }
     }
 }

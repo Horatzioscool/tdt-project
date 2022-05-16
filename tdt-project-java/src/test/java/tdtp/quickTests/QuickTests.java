@@ -4,9 +4,12 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import tdtp.steps.serenity.EndUserSteps;
 
 @RunWith(SerenityRunner.class)
@@ -14,8 +17,14 @@ public class QuickTests {
 
     private String username = "gomicox775@roxoas.com", password = "Pass.1234";
 
+
     @Managed(uniqueSession = false)
     public WebDriver webDriver;
+
+    @Before
+    public void initializeDriver(){
+        webDriver.manage().window().maximize();
+    }
 
     @Steps
     public EndUserSteps user;

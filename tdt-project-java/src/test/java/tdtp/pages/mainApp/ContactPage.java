@@ -17,6 +17,7 @@ public class ContactPage extends BasePage {
     }
 
     public boolean is_ContactPage() {
-        return getDriver().getCurrentUrl().equalsIgnoreCase("https://lighthouse-demo.evozon.com/contact-us");
+        System.out.println(getDriver().getCurrentUrl());
+        return getDriver().getCurrentUrl().equalsIgnoreCase("https://lhdemo:LH%40Evozon%212022@lighthouse-demo.evozon.com/contact-us");
     }
 }
