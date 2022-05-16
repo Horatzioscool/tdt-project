@@ -1,0 +1,12 @@
+config:
+  target: https://lighthouse-demo.evozon.com/
+  phases:
+    - arrivalRate: 5
+      duration: 30
+  defaults:
+    headers:
+        authorization: Basic bGhkZW1vOkxIQEV2b3pvbiEyMDIy
+scenarios:
+  - flow:
+      - get:
+          url: '/'

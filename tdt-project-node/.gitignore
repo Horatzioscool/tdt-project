@@ -144,3 +144,4 @@ dist
 *.vsix
 
 target
+config.local.json

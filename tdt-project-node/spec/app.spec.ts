@@ -5,7 +5,7 @@ import { authheader } from "./helpers";
 
 const { url, username, password } = config;
 
-describe("Lighthouse App", () => {
+xdescribe("Lighthouse App", () => {
   it("lets us book desks", async () => {
     const browser = await Puppeteer.launch({ headless: false });
     const page = await browser.newPage();
