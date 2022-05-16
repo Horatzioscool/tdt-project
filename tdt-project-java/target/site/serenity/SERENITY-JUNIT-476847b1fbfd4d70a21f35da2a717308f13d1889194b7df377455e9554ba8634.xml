@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="tdtp.quickTests.QuickTests" skipped="0" tests="1" time="9.06" timestamp="2022-05-16 04:15:06"><testcase classname="tdtp.quickTests.QuickTests" name="Contact page loads after selection"><failure message="User should be on contact page!" type="java.lang.AssertionError">User should be on contact page!</failure><system-err>User should be on contact page!&#13;
+tdtp.steps.serenity.EndUserSteps.should_be_on_contact_page(EndUserSteps.java:73)&#13;
+tdtp.quickTests.QuickTests.contactPage_loads_after_selection(QuickTests.java:122)&#13;
+</system-err></testcase></testsuite>
