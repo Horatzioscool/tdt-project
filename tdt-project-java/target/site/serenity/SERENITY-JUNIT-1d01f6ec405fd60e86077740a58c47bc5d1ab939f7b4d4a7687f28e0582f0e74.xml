@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="tdtp.features.login.Login" skipped="0" tests="1" time="0.0" timestamp="2022-05-16 02:03:43"><testcase classname="tdtp.features.login.Login" name="Initialisation"><failure message="The page object class tdtp.pages.mainApp.ManageBookingsPage could not be instantiated:&#10;Failed to instantiate page (java.lang.NullPointerException)" type="net.thucydides.core.pages.WrongPageError">The page object class tdtp.pages.mainApp.ManageBookingsPage could not be instantiated:
+Failed to instantiate page (java.lang.NullPointerException)</failure><system-err>The page object class tdtp.pages.mainApp.ManageBookingsPage could not be instantiated:
+Failed to instantiate page (java.lang.NullPointerException)&#13;
+</system-err></testcase></testsuite>
