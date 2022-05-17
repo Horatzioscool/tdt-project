@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="tdtp.quickTests.PageLoadingTests" skipped="0" tests="1" time="6.44" timestamp="2022-05-16 07:14:32"><testcase classname="tdtp.quickTests.PageLoadingTests" name="Login page loads after authentication"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
+tdtp.pages.mainApp.BasePage.waitForElement(BasePage.java:73)&#13;
+tdtp.pages.mainApp.BasePage.signOut(BasePage.java:81)&#13;
+tdtp.steps.serenity.EndUserSteps.sign_out(EndUserSteps.java:48)&#13;
+tdtp.quickTests.PageLoadingTests.clear(PageLoadingTests.java:161)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="tdtp.quickTests.E2ETest" skipped="0" tests="1" time="24.88" timestamp="2022-05-17 02:29:04"><testcase classname="tdtp.quickTests.E2ETest" name="Admin testing"><error message="Expected condition failed: waiting for element to be clickable: Proxy element for: BuildingsPage.buildingActionsIndex7 (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for element to be clickable: Proxy element for: BuildingsPage.buildingActionsIndex7 (tried for 10 second(s) with 500 milliseconds interval)</error><system-err>Expected condition failed: waiting for element to be clickable: Proxy element for: BuildingsPage.buildingActionsIndex7 (tried for 10 second(s) with 500 milliseconds interval)&#13;
+tdtp.pages.mainApp.BuildingsPage.waitForElement(BuildingsPage.java:107)&#13;
+tdtp.pages.mainApp.BuildingsPage.select_buildingActionsIndex7(BuildingsPage.java:76)&#13;
+tdtp.steps.serenity.EndUserSteps.select_buildingActionsIndex7(EndUserSteps.java:220)&#13;
+tdtp.quickTests.E2ETest.admin_testing(E2ETest.java:53)&#13;
+</system-err></testcase></testsuite>

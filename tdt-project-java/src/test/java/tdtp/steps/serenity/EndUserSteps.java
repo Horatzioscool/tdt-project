@@ -143,4 +143,165 @@ public class EndUserSteps {
         basePage.clickOnTab("reports");
         reportsPage.select_utilizationReports();
     }
+
+    @Step
+    public void select_addNewBookingBtn() {
+        manageBookingsPage.select_addNewBookingBtn();
+    }
+
+    @Step
+    public void select_datePickerDate() {
+        manageBookingsPage.select_datePickerDate();
+    }
+
+    @Step
+    public void select_areaPickerArea() {
+        manageBookingsPage.select_areaPickerArea();
+    }
+
+    @Step
+    public void select_emptyDesk() {
+        manageBookingsPage.select_emptyDesk();
+    }
+
+    @Step
+    public void finish_deskBooking() {
+        manageBookingsPage.finish_deskBooking();
+    }
+
+    @Step
+    public void delete_firstElementOfUpcomingBookings() {
+        manageBookingsPage.delete_firstElementOfUpcomingBookings();
+    }
+
+    @Step
+    public void select_bookForAnotherUserBtn() {
+        manageBookingsPage.select_bookForAnotherUserBtn();
+    }
+
+    @Step
+    public void set_anotherUserMailInput(String mail) {
+        manageBookingsPage.set_anotherUserMailInput(mail);
+    }
+
+    @Step
+    public void select_selectAnotherUserMailBtn() {
+        manageBookingsPage.select_selectAnotherUserMailBtn();
+    }
+
+    @Step
+    public void goToBuildingsPage() {
+        buildingsPage.goToBuildingsPage();
+    }
+
+    @Step
+    public void set_buildingName(String name) {
+        buildingsPage.set_buildingName(name);
+    }
+
+    @Step
+    public void set_safeDistance(String dist) {
+        buildingsPage.set_safeDistance(dist);
+    }
+
+    @Step
+    public void createNewBuilding() {
+        buildingsPage.createNewBuilding();
+    }
+
+    @Step
+    public void set_addNewBuildingBtn() {
+        buildingsPage.set_addNewBuildingBtn();
+    }
+
+    @Step
+    public void select_buildingActionsIndex7() {
+        buildingsPage.select_buildingActionsIndex7();
+    }
+
+    @Step
+    public void select_deleteBuilding() {
+        buildingsPage.select_deleteBuilding();
+    }
+
+    @Step
+    public void select_editBuilding() {
+        buildingsPage.select_editBuilding();
+    }
+
+    @Step
+    public void set_editBuildingsName() {
+        buildingsPage.set_editBuildingsName();
+    }
+
+    @Step
+    public void set_editBuildingsSafeDistance() {
+        buildingsPage.set_editBuildingsSafeDistance();
+    }
+
+    @Step
+    public void select_saveEditedBuilding() {
+        buildingsPage.select_saveEditedBuilding();
+    }
+
+    @Step
+    public void select_deskCanvas() {
+        desksPage.select_deskCanvas();
+    }
+
+    @Step
+    public void set_newDeskPupUpLabelInput(String label) {
+        desksPage.set_newDeskPupUpLabelInput(label);
+    }
+
+    @Step
+    public void select_saveNewDeskBtn() {
+        desksPage.select_saveNewDeskBtn();
+    }
+
+    @Step
+    public void set_newEquipmentNameInput(String name) {
+        desksPage.set_newEquipmentNameInput(name);
+    }
+
+    @Step
+    public void select_newEquipmentCreateBtn() {
+        desksPage.select_newEquipmentCreateBtn();
+    }
+
+    @Step
+    public void set_editEquipmentNameInput(String newName) {
+        desksPage.set_editEquipmentNameInput(newName);
+    }
+
+    @Step
+    public void select_editEquipmentHiddenBtn() {
+        desksPage.select_editEquipmentHiddenBtn();
+    }
+
+    @Step
+    public void select_saveEditedEquipmentName() {
+        desksPage.select_saveEditedEquipmentName();
+    }
+
+    @Step
+    public void select_deleteEquipmentBtn() {
+        desksPage.select_saveEditedEquipmentName();
+    }
+
+    @Step
+    public void select_addNewDeskBtn() {
+        desksPage.select_addNewDeskBtn();
+    }
+
+    @Step
+    public void set_newDeskPopUpAssignToInput(String assign) {
+        desksPage.set_newDeskPopUpAssignToInput(assign);
+    }
+
+    @Step
+    public void select_manageEquipmentListBtn() {
+        desksPage.select_manageEquipmentListBtn();
+    }
+
 }
