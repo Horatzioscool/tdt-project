@@ -15,7 +15,6 @@ public class PageLoadingTests {
 
     private String username = "gomicox775@roxoas.com", password = "Pass.1234";
 
-
     @Managed(uniqueSession = false)
     public WebDriver webDriver;
 

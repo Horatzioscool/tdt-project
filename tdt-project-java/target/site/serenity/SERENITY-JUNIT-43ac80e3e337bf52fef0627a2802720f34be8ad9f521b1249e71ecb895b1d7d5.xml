@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="tdtp.quickTests.UserE2ETest" skipped="0" tests="1" time="25.36" timestamp="2022-05-16 09:06:34"><testcase classname="tdtp.quickTests.UserE2ETest" name="User desk booking"><error message="Expected condition failed: waiting for element to be clickable: Proxy element for: AddNewBookingPage.bookDeskButton (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for element to be clickable: Proxy element for: AddNewBookingPage.bookDeskButton (tried for 10 second(s) with 500 milliseconds interval)</error><system-err>Expected condition failed: waiting for element to be clickable: Proxy element for: AddNewBookingPage.bookDeskButton (tried for 10 second(s) with 500 milliseconds interval)&#13;
+tdtp.pages.mainApp.AddNewBookingPage.waitForElement(AddNewBookingPage.java:49)&#13;
+tdtp.pages.mainApp.AddNewBookingPage.finish_deskBooking(AddNewBookingPage.java:43)&#13;
+tdtp.steps.serenity.EndUserSteps.finish_deskBooking(EndUserSteps.java:170)&#13;
+tdtp.quickTests.UserE2ETest.user_desk_booking(UserE2ETest.java:40)&#13;
+</system-err></testcase></testsuite>
