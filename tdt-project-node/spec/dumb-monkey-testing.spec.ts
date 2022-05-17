@@ -155,6 +155,8 @@ describe("Lighthouse DUMB MONKEY TESTING", () => {
     await page.screenshot({
       path: `spec/dumb-monkey-testing/screenshots/${testId}-${rightNow}.png`,
     });
+    await page.close();
+    await browser.close();
     expect(true);
   });
 });

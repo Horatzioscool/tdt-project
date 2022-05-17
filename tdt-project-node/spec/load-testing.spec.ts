@@ -33,7 +33,7 @@ const scripteFileTemplate = `spec/load-testing/load-testing.yaml.mustache`;
 const scriptFile = `spec/load-testing/load-testing.yaml`;
 const reportFile = `spec/load-testing/report.json`;
 
-xdescribe("Lighthouse LOAD TEST", () => {
+describe("Lighthouse LOAD TEST", () => {
   let originalTimeout;
   beforeAll(() => {
     originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
